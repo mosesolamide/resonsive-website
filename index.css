@@ -1,0 +1,161 @@
+*{ 
+    box-sizing: border-box; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", monospace;
+}
+nav ul{
+    list-style: none;   
+    padding: 0;
+    margin:0;
+}
+ul a{
+    text-decoration: none;
+    color: #090909;
+    margin-left: 1.4em;
+    font-size: 0.98em;
+    font-weight: 600;
+    line-height: 15.08px;
+}
+.container{
+    width: 90%;
+    min-width: 450px;
+    margin: 0 auto;
+}
+.student{
+    display:flex;
+    align-items: center;
+}
+.childCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* css for images */
+.firstImg{
+    width: 100%;
+    position: relative;
+    height: 60vh;
+    max-width: 100vw;
+}
+.section-img{
+    width: 95%;
+    margin-top: 2.8em;
+    flex-wrap: wrap;
+}
+/* font */
+h1{
+    font-size: 1.1em;
+}
+h2{
+    font-size: 2em;
+    font-weight: 800;
+}
+.sectionTwo article,
+main article{
+    text-align: start;
+}
+.child_sectionOne,
+.childCont,
+.article,
+.myLove{
+    padding: 0 22.5px;
+}
+#head{
+    text-align: center;
+    font-size: 1.2em;
+}
+.child_sectionOne{
+    position: absolute;
+    top: 6.875rem;
+    left: auto;
+    bottom:0;
+    color: #fff;
+    max-width: 450px;  
+}
+.small{
+    line-height: 1;
+    font-size: 1em;
+    font-weight: 400;
+    max-width: 500px; 
+}
+/* main */
+.sectionTwo, 
+.sectionThree{
+    text-align: center;
+}
+.myProfile{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.view-more a{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: black;
+}
+.view-more{
+    margin-bottom: 35px;
+}
+.displayLast{
+    display: none;
+}
+/* footer css */
+footer div{
+   text-align: center;
+   min-width: 414px;
+   padding: 30px 0;
+   background-color:#202020;
+   color:#ECECEC;
+}
+
+/* media queries */
+@media (min-width:801px){
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    .firstImg{
+        width: 100vw;
+        height: 67vh;
+    }
+    .child_sectionOne{
+        max-width: 500px;   
+    }
+    #hide1,
+    #hide{
+        display: none;
+    }
+    .sectionTwo .container,
+    .viewTwo .container{
+        display: flex;
+    }
+    .displayLast{
+        display: flex;
+        margin-bottom: 38px;
+    }
+    .viewTwo img{
+        object-fit: cover;
+        width: 90%;
+        height: 50%;
+    }
+    .viewTwo{
+        margin: 0;
+    }
+    h5{
+        font-size: 4rem;
+        margin: 0;
+    }
+    .myProfile{
+        margin-top: 70px;
+    }
+    .aboutMain{
+        padding: 60px;
+    }
+    .viewMain{
+        margin: 0;
+        padding: 60px;
+    }
+} 
